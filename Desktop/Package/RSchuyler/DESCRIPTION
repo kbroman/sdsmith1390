@@ -1,0 +1,11 @@
+Package: RSchuyler
+Title: Genomics processing tools
+Version: 0.1
+Authors@R: person("Schuyler", "Smith", email = "schuyler.smith@wisc.edu", role = c("aut", "cre"))
+Description: Contains various functions useful for processing genomic data,
+    namely GBS.
+Depends:
+    R (>= 3.2.2)
+License: GPL-3
+LazyData: true
+RoxygenNote: 5.0.1.9000
