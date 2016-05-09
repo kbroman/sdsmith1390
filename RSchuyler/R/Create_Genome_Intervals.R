@@ -1,7 +1,7 @@
 #' Create Genome Intervals
 #'
 #' This functiion takes a number or series of numbers (chromosome.sizes) in BED format and creates equal (intervals) of (size) megabases or (size) proportions. The chromosome.sizes can be created easily by using samtools faidx command.
-#' @param chromosome.intervals Chromosome number in first column and corresponding size in second (BED format), can easily be created using samtools faidx command.
+#' @param chromosome.sizes Chromosome number in first column and corresponding size in second (BED format), can easily be created using samtools faidx command.
 #' @param intervals Should each chromosome be split into intervals or proportions? Defaults to intervals.
 #' @param size How many megabases for each interval or number of equal proportions to break chromosome into. Defaults to 10.
 #' @keywords genome intervals

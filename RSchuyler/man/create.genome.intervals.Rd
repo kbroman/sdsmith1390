@@ -7,11 +7,11 @@
 create.genome.intervals(chromosome.sizes, intervals = TRUE, size = 10)
 }
 \arguments{
+\item{chromosome.sizes}{Chromosome number in first column and corresponding size in second (BED format), can easily be created using samtools faidx command.}
+
 \item{intervals}{Should each chromosome be split into intervals or proportions? Defaults to intervals.}
 
 \item{size}{How many megabases for each interval or number of equal proportions to break chromosome into. Defaults to 10.}
-
-\item{chromosome.intervals}{Chromosome number in first column and corresponding size in second (BED format), can easily be created using samtools faidx command.}
 }
 \description{
 This functiion takes a number or series of numbers (chromosome.sizes) in BED format and creates equal (intervals) of (size) megabases or (size) proportions. The chromosome.sizes can be created easily by using samtools faidx command.
