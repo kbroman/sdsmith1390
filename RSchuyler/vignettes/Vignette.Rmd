@@ -2,32 +2,36 @@
 title: "R Package for T4RR S16"
 author: "Schuyler"
 date: "May 6, 2016"
-output: pdf_document
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{R Package for T4RR S16}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8](inputenc)
 ---
 
 ## binnit
 
-Binnit is a function designed to split __BED format__ data into 'bins', or smaller subsamples, either of a designated size or proportion of the total size of the primary. BED format is used for genome data but may be applied to other datasets as well. BED format lists the chromosome in column 1 and the size of the chromosome in column 2.  
-  
-* BED format  
-  
-Chromosome  | Size  
------------ | -------  
-1           | 3000  
-2           | 5000  
-3           | 2000  
+Binnit is a function designed to split __BED format__ data into 'bins', or smaller subsamples, either of a designated size or proportion of the total size of the primary. BED format is used for genome data but may be applied to other datasets as well. BED format lists the chromosome in column 1 and the size of the chromosome in column 2.
+
+* BED format
+
+Chromosome  | Size
+----------- | -------
+1           | 3000
+2           | 5000
+3           | 2000
 
 
 ## How to run binnit
 
-The first thing you need is a dataset in the correct format: 
+The first thing you need is a dataset in the correct format:
 
 ```{r echo=TRUE}
 data <- data.frame("chromosome"=sequence(3), "size"=round(runif(3,5000000,50000000)))
 data
 ```
 
-With that dataset and the binnit function loaded into the R workspace the function can then be run.  
+With that dataset and the binnit function loaded into the R workspace the function can then be run.
 ```{R}
 source("./R/Create_Genome_Intervals.R")
 ```
@@ -42,8 +46,3 @@ vs
 ```{r echo=TRUE}
 create.genome.intervals(chromosome.sizes=data, intervals=FALSE, size=5)
 ```
-
-
-
-
-
