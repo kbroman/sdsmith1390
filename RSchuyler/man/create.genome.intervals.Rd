@@ -17,7 +17,7 @@ create.genome.intervals(chromosome.sizes, intervals = TRUE, size = 10)
 This functiion takes a number or series of numbers (chromosome.sizes) in BED format and creates equal (intervals) of (size) megabases or (size) proportions. The chromosome.sizes can be created easily by using samtools faidx command.
 }
 \examples{
-creat.genome.intervals()
+create.genome.intervals()
 }
 \keyword{genome}
 \keyword{intervals}

@@ -7,7 +7,7 @@
 #' @keywords genome intervals
 #' @export
 #' @examples
-#' creat.genome.intervals()
+#' create.genome.intervals()
 
 create.genome.intervals<-function(chromosome.sizes, intervals=TRUE, size=10){
 
