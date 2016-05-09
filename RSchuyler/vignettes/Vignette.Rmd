@@ -33,7 +33,7 @@ data
 
 With that dataset and the binnit function loaded into the R workspace the function can then be run.
 ```{R}
-source("./R/Create_Genome_Intervals.R")
+library(RSchuyler)
 ```
 
 
