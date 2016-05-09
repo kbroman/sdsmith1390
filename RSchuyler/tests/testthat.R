@@ -1,2 +1,2 @@
 library(testthat)
-test_check("RSchuler")
+test_check("RSchuyler")
