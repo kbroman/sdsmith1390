@@ -17,7 +17,8 @@ create.genome.intervals(chromosome.sizes, intervals = TRUE, size = 10)
 This functiion takes a number or series of numbers (chromosome.sizes) in BED format and creates equal (intervals) of (size) megabases or (size) proportions. The chromosome.sizes can be created easily by using samtools faidx command.
 }
 \examples{
-create.genome.intervals()
+data <- data.frame("chromosome"=sequence(3), "size"=round(runif(3,5000000,50000000)))
+create.genome.intervals(data, TRUE, 5)
 }
 \keyword{genome}
 \keyword{intervals}

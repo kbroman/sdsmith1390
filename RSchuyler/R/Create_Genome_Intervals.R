@@ -7,7 +7,8 @@
 #' @keywords genome intervals
 #' @export
 #' @examples
-#' create.genome.intervals()
+#' data <- data.frame("chromosome"=sequence(3), "size"=round(runif(3,5000000,50000000)))
+#' create.genome.intervals(data, TRUE, 5)
 
 create.genome.intervals<-function(chromosome.sizes, intervals=TRUE, size=10){
 
